@@ -6,6 +6,10 @@ using UnityEngine.UI;
 public class LogoLight : MonoBehaviour
 {
     public float TweenTime;
+
+    [Range(0, 1)]
+    public float MinValue;
+
     private float startTime;
     private bool isFading = true;
     private Image myImg;
@@ -40,7 +44,7 @@ public class LogoLight : MonoBehaviour
                 return;
             }
             
-            myImg.color = new Color(myImg.color.r, myImg.color.g, myImg.color.b, (Mathf.Abs(1 - ((startTime + TweenTime) - Time.time) / TweenTime)));
+            myImg.color = new Color(myImg.color.r, myImg.color.g, myImg.color.b, (Mathf.Abs((1 + MinValue) - ((startTime + TweenTime) - Time.time) / TweenTime)));
         }
 	}
 }
