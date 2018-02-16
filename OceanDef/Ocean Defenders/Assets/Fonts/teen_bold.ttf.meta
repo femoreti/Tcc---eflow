@@ -5,14 +5,15 @@ TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
   fontSize: 48
-  forceTextureCase: -1
+  forceTextureCase: -2
   characterSpacing: 0
   characterPadding: 1
   includeFontData: 1
   fontName: Teen
   fontNames:
   - Teen
-  fallbackFontReferences: []
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: e676d3c9c796e4898bea84a796d508e0, type: 3}
   customCharacters: 
   fontRenderingMode: 0
   ascentCalculationMode: 1
